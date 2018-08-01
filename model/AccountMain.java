@@ -2,7 +2,11 @@ package model;
 
 public class AccountMain extends  Account {
 
-	public void virrement(double soldA,double solbB,double mentant) {
-
+	
+	//solde are heritated 
+	
+	public void virement(AccountMain comptDept,double mentantDeVirement) {
+		comptDept.setSolde(comptDept.getSolde()- mentantDeVirement);
+		solde+=mentantDeVirement;
 	}
 }
