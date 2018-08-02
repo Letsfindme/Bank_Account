@@ -3,24 +3,27 @@ package model;
 public class Application{
 
 	public static void main(String[] args) {
-
+		
 		AccountPEL pierre = new AccountPEL();
-
+		
 		AccountMain pierreMain = new AccountMain();
-		pierreMain.setSolde(5000);
-		System.out.println("Solde de Pierre avant: "+ pierreMain.getSolde() );
+		pierreMain.setBalance(5000);
+		System.out.println("Solde de Pierre avant: "+ pierreMain.getBalance() );
 		AccountMain aureliaMain = new AccountMain();
-		aureliaMain.setSolde(4000);
-		System.out.println("Solde de Aurelia  avant: "+ aureliaMain.getSolde() );
+		aureliaMain.setBalance(400);
+		System.out.println("Solde de Aurelia  avant: "+ aureliaMain.getBalance() );
 		
-		aureliaMain.virement(pierreMain, 100);
+		//add Money to the balance of aureliaMain
+		pierreMain.virement(aureliaMain, 100);
 		
-		System.out.println("Solde de Aurelia après: "+ pierreMain.getSolde() );
-		System.out.println("Solde de Aurelia  après: "+ aureliaMain.getSolde() );
+		System.out.println("Solde de Aurelia après: "+ pierreMain.getBalance() );
+		System.out.println("Solde de Aurelia  après: "+ aureliaMain.getBalance() );
 		
 		
 		
-
+		
+		
+		
 	}
 
 
