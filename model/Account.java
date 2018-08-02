@@ -5,7 +5,7 @@ public class Account {
 	
 	String name;
 	String surname;
-	double solde;
+	double balance;
 	
 	
 	
@@ -13,6 +13,7 @@ public class Account {
 	
 	public String getName() {
 		return name;
+		
 	}
 	public void setName(String name) {
 		this.name = name;
@@ -23,11 +24,12 @@ public class Account {
 	public void setSurname(String surname) {
 		this.surname = surname;
 	}
-	public double getSolde() {
-		return solde;
+	public double getBalance() {
+		return balance;
 	}
-	public void setSolde(double solde) {
-		this.solde = solde;
+	public void setBalance(double solde) {
+		this.balance = solde;
 	}
 
+	
 }
