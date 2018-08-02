@@ -3,10 +3,10 @@ package model;
 public class AccountMain extends  Account {
 
 	
-	//solde are heritated 
+	//solde are inherited 
 	
-	public void virement(AccountMain comptDept,double amountDeVirement) {
-		comptDept.setSolde(comptDept.getSolde()- amountDeVirement);
-		solde+=amountDeVirement;
+	public void virement(AccountMain comptCredit,double amountDeVirement) {
+		comptCredit.setBalance(comptCredit.getBalance()+ amountDeVirement);
+		balance-=amountDeVirement;
 	}
 }
